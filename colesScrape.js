@@ -1,7 +1,7 @@
 const { Cluster } = require('puppeteer-cluster');
 const fs = require('fs');
 require("dotenv").config();
-//const puppeteer= require('puppeteer');
+const puppeteer= require('puppeteer');
 
 
 const colesScrape = async (res) => {
