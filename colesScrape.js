@@ -30,9 +30,9 @@ const colesScrape = async (res) => {
             timeout: 4200000,
             // monitor: true,
             puppeteerOptions: {
-                headless: false,
+                headless: "new",
                 // defaultViewport: false,
-                // userDataDir: "./tmp",
+                userDataDir: "./tmp",
                 timeout: 6000000,
                 protocolTimeout: 6000000,
                 executablePath: process.env.NODE_ENV === 'production'
