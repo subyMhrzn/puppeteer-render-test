@@ -60,7 +60,7 @@ try{
 
             await page.goto(url, {
                 waitUntil: "load",
-                // timeout: 600000
+                 timeout: 600000
             });
 
             await page.waitForSelector("button#pagination-button-next", { visible: true, timeout: 35000 });
