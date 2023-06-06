@@ -25,7 +25,7 @@ const colesScrape = async (res) => {
     (async () => {
         const cluster = await Cluster.launch({
             concurrency: Cluster.CONCURRENCY_CONTEXT,
-            maxConcurrency: 3,
+            maxConcurrency: 1,
             retryLimit: 5,
             timeout: 4200000,
             // monitor: true,
